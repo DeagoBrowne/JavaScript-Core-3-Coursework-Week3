@@ -70,3 +70,14 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+let [firstName, lastName, house, pet, occupation] = hogwarts;
+
+let names = []
+for (key of hogwarts) {
+  if(key.house == 'Gryffindor'){
+    names.push(`${key.firstName} ${key.lastName}`);
+  }
+}
+
+console.log(names);
