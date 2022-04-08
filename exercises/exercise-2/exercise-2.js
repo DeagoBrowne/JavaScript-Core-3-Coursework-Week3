@@ -81,3 +81,12 @@ for (key of hogwarts) {
 }
 
 console.log(names);
+
+let teachersWithPets = [];
+for (key of hogwarts) {
+  if(key.occupation == 'Teacher' && key.pet != null){
+    teachersWithPets.push(`${key.firstName} ${key.lastName}`);
+  }
+}
+
+console.log(teachersWithPets);
