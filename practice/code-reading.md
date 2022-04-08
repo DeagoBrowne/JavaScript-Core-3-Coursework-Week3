@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+<!-- different scopes: 'x = 1' is global, 'x = 2' is within the function's scope - and therefore is not recognised by the global console.log-->
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+<!-- 10 undefined: x is global, and so can be logged by function - y is local, and therefore cannot be logged globally-->
 
 ## Question 3
 
@@ -62,3 +64,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+<!-- first instinct is an error - as the initial val is undefined -- otherwise f1(x) = 10 & f2(y) = {x: 10} -->
